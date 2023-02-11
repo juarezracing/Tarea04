@@ -1,18 +1,31 @@
 package cuentas;
 
+/**
+ *
+ * @author IsmaelJuarez
+ */
 public class Main {
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
-        CCuenta nuevaCuenta;
+        CCuenta Cuenta1;
         double saldoActual;
 
-        nuevaCuenta = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
-        saldoActual = nuevaCuenta.estado();
+        Cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
+        saldoActual = Cuenta1.estado();
         System.out.println("El saldo actual es"+ saldoActual );
 
-        operativa_cuenta(nuevaCuenta, null);
+        operativa_cuenta(Cuenta1, null);
     }
 
+    /**
+     *
+     * @param cuenta1
+     * @param cantidad
+     */
     public static void operativa_cuenta(CCuenta cuenta1, java.lang.Float cantidad) {
         try {
             cuenta1.retirar(2300);
