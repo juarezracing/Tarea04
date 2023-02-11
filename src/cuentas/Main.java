@@ -3,14 +3,14 @@ package cuentas;
 public class Main {
 
     public static void main(String[] args) {
-        CCuenta cuenta1;
+        CCuenta nuevaCuenta;
         double saldoActual;
 
-        cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
-        saldoActual = cuenta1.estado();
+        nuevaCuenta = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
+        saldoActual = nuevaCuenta.estado();
         System.out.println("El saldo actual es"+ saldoActual );
 
-        operativa_cuenta(cuenta1, null);
+        operativa_cuenta(nuevaCuenta, null);
     }
 
     public static void operativa_cuenta(CCuenta cuenta1, java.lang.Float cantidad) {
